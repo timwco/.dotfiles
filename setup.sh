@@ -9,7 +9,7 @@ dir=~/.dotfiles
 templates=$dir/templates
 extras=$dir/extras
 olddir=~/.dotfiles_old
-files="bashrc gitconfig tmux.conf zshrc vimrc spacemacs"
+files="gitconfig zshrc spacemacs zpreztorc"
 
 # create dotfiles_old in homedir
 echo "\nCreating $olddir for backup of any existing dotfiles in ~"
@@ -26,24 +26,6 @@ for file in $files; do
     echo "\nCreating symlink to $file in home directory."
     ln -s $templates/$file ~/.$file
 done
-
-# Copy over Tim's ZSH  theme
-echo "\nCopying Tim's ZSH Theme"
-mkdir -p ~/.oh-my-zsh/themes
-ln -sf $extras/tim.zsh-theme ~/.oh-my-zsh/themes/tim.zsh-theme
-
-# Copy over Vim themes and syntax helpers
-echo "\nCopying Over Vim Theme & Helpers"
-mkdir -p ~/.vim/colors
-ln -sf $extras/VimThemes/tim.vim ~/.vim/colors/tim.vim
-ln -sf $extras/VimThemes/itg_flat.vim ~/.vim/colors/itg_flat.vim
-ln -sf $extras/VimThemes/ir_black.vim ~/.vim/colors/ir_black.vim
-
-# Copy over Vim Snippets
-echo "\nCopying Over Vim Shippets"
-mkdir -p ~/.vim/UltiSnips
-cp -a $extras/UltiSnips/. ~/.vim/UltiSnips/ 
- 
 
 # Copy over Sublime Text 3 Settings
 echo "\nCopying Over Sublime Text 3 Info"

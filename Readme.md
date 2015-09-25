@@ -1,9 +1,4 @@
-## Setup
-
-```sh
-brew install reattach-to-user-namespace
-```
-
+These are my dot files. Enjoy.
 
 ## Restore
 
@@ -14,15 +9,7 @@ brew install reattach-to-user-namespace
 $ sh setup.sh
 ```
 
-> Note: This will automatically create a `dotfiles_old` folder and backup any exsisting files.
-
-
-## Get VIM Ready
-
-```sh
-$ vim # Any file will do
-:BundleInstall
-```
+> Note: This will automatically create a `dotfiles_old` folder and backup any existing files.
 
 
 ## Other Notes
