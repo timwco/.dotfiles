@@ -1,8 +1,8 @@
 {
 	"caret_style": "phase",
-	"color_scheme": "Packages/Predawn/predawn.tmTheme",
+	"color_scheme": "Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme",
 	"findreplace_small": true,
-	"font_size": 16,
+	"font_size": 15,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
@@ -15,9 +15,10 @@
 	"scroll_past_end": true,
 	"sidebar_medium": true,
 	"spell_check": true,
+	"tab_font_small": true,
 	"tab_size": 2,
 	"tabs_small": true,
-	"theme": "predawn.sublime-theme",
+	"theme": "Gravity.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"word_wrap": true
 }

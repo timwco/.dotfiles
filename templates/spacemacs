@@ -13,7 +13,6 @@
    dotspacemacs-configuration-layers
    '(
      osx
-     php
      javascript
      auto-completion
      git
@@ -80,9 +79,9 @@ before layers configuration."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro for Powerline"
+   dotspacemacs-default-font '("Office Code Pro"
                                :size 16
-                               :weight light
+                               :weight normal 
                                :width normal
                                :powerline-scale 1.1)
    ;; The leader key
@@ -111,7 +110,7 @@ before layers configuration."
    dotspacemacs-loading-progress-bar t
    ;; If non nil the frame is fullscreen when Emacs starts up.
    ;; (Emacs 24.4+ only)
-   dotspacemacs-fullscreen-at-startup nil
+   dotspacemacs-fullscreen-at-startup t
    ;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.
    ;; Use to disable fullscreen animations in OSX."
    dotspacemacs-fullscreen-use-non-native nil
@@ -155,6 +154,33 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+
+  (spacemacs/toggle-line-numbers) ;; enable line numbers
+
+  ;; Indentation from
+  (defun my-setup-indent (n)
+    ;; web development
+    (setq coffee-tab-width n) ; coffeescript
+    (setq javascript-indent-level n) ; javascript-mode
+    (setq js-indent-level n) ; js-mode
+    (setq js2-basic-offset n) ; js2-mode
+    (setq web-mode-markup-indent-offset n) ; web-mode, html tag in html file
+    (setq web-mode-css-indent-offset n) ; web-mode, css in html file
+    (setq web-mode-code-indent-offset n) ; web-mode, js code in html file
+    (setq css-indent-offset n) ; css-mode
+    )
+
+  (defun my-code-style ()
+    (interactive)
+    (message "Indentation set to two")
+    (setq indent-tabs-mode nil) ; use space instead of tab
+    (my-setup-indent 2) ; indent 2 spaces width
+    )
+
+  ;; call indentation
+  (my-code-style)
+
+
 )
 
 ;; Do not write anything past this comment. This is where Emacs will

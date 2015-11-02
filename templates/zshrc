@@ -12,7 +12,7 @@ alias e='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias v='vim'
 alias c='clear'
 alias do_personal='ssh root@104.131.24.10'
-alias do_projects='ssh root@107.170.20.87'
+alias do_projects='ssh tim@159.203.91.123'
 alias iron='~/TIY/Cohorts/Cohort\ 5/'
 
 # Custom Deploy Git Commands
@@ -33,3 +33,11 @@ alias assign_issue="sh ~/Shell\ Scripts/tiy-assignment.sh"
 
 # The Rubies
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export PATH=/usr/local/sbin:${PATH}
+
+# Golang Settings
+export GOPATH=$HOME/Go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
