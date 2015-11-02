@@ -14,4 +14,4 @@ $ sh setup.sh
 
 ## Other Notes
 
-* Sublime Text 3 - [Predawn Theme](https://github.com/jamiewilson/predawn)
+* Sublime Text 3 - [Gravity](https://github.com/frankyonnetti/gravity-sublime-theme)
