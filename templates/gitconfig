@@ -3,6 +3,7 @@
   name = Tim Whitacre
 [core]
   editor = vim
+	excludesfile = /Users/Tim/.gitignore_global
 [github]
   user = twhitacre
 [ghi]
@@ -10,4 +11,4 @@
 [color]
   ui = true
 [format]
-  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+  pretty = %C(magenta)%h%Creset %s %C(cyan)(%an, %cr)%Creset
