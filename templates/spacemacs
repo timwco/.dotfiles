@@ -207,7 +207,7 @@ layers configuration."
     (defun tw/project-prompt ()
         (interactive)
         (let ((current-work-dir "/Users/Tim/TIY/Cohorts/Cohort 5/Projects/"))
-            (tw/open-project-by-name current-work-dir)))
+          (tw/open-project-by-name current-work-dir)))
   )
 
   (define-key evil-normal-state-map (kbd "C-p") 'tw/project-prompt)
