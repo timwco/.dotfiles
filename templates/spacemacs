@@ -70,17 +70,24 @@ before layers configuration."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(zenburn
+   dotspacemacs-themes '(apropospriate-dark
+                         zenburn
                          solarized-light
                          solarized-dark
                          leuven
+                         ample-flat
+                         brin
+                         bubbleberry
+                         colorsarenice-dark
+                         firebelly
+                         obsidian
                          monokai)
    ;; If non nil the cursor color matches the state color.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Office Code Pro"
-                               :size 20
+                               :size 17
                                :weight normal 
                                :height 5
                                :width normal
@@ -181,6 +188,26 @@ layers configuration."
   ;; call indentation
   (my-code-style)
 
+
+  ;; custom function to open projects files
+  (defun tw/find-project-folders (dir)
+    (–map (file-relative-name it dir)
+          (-filter (lambda (subdir)
+                     (–reduce-from (or acc (funcall it subdir)) nil
+                                   projectile-project-root-files-functions))
+                   (-filter #'file-directory-p (directory-files dir t "\<")))))
+
+  (defun tw/open-project-by-name (start-dir &optional arg)
+    (let ((project-dir (projectile-completing-read "Open project: "
+                                                    (tw/find-project-folders start-dir))))
+      (projectile-switch-project-by-name (expand-file-name project-dir start-dir) arg)))
+
+  (defun tw/project-prompt ()
+    (interactive)
+    (let ((current-work-dir "~/TIY/Cohorts/Cohort 5/Projects"))
+      (tw/open-project-by-name current-work-dir)))
+
+  (define-key evil-normal-state-map (kbd "C-p") 'tw/project-prompt)
 
 )
 
