@@ -18,7 +18,6 @@
      git
      markdown
      ruby
-     xkcd
      go
      shell-scripts
      html
@@ -92,6 +91,8 @@ before layers configuration."
                                :height 5
                                :width normal
                                :powerline-scale 1.1)
+   ;; Set evil width default
+   evil-shift-width 2
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The leader key accessible in `emacs state' and `insert state'
@@ -192,9 +193,9 @@ layers configuration."
   ;; custom function to open projects files
   (with-eval-after-load 'dash
     (defun tw/find-project-folders (dir)
-        (–map (file-relative-name it dir)
+        (--map (file-relative-name it dir)
             (-filter (lambda (subdir)
-                        (–reduce-from (or acc (funcall it subdir)) nil
+                        (-reduce-from (or acc (funcall it subdir)) nil
                                     projectile-project-root-files-functions))
                     (-filter #'file-directory-p (directory-files dir t "\<")))))
 
@@ -203,8 +204,13 @@ layers configuration."
                                                         (tw/find-project-folders start-dir))))
         (projectile-switch-project-by-name (expand-file-name project-dir start-dir) arg)))
 
+    (defun tw/project-prompt ()
+        (interactive)
+        (let ((current-work-dir "/Users/Tim/TIY/Cohorts/Cohort 5/Projects/"))
+            (tw/open-project-by-name current-work-dir)))
   )
 
+  (define-key evil-normal-state-map (kbd "C-p") 'tw/project-prompt)
 
 )
 
