@@ -33,9 +33,12 @@ values."
      markdown
      ruby
      go
+     erlang
+     elixir
      shell-scripts
      html
      shell
+     php
      ;; git
      ;; markdown
      ;; org
@@ -214,6 +217,7 @@ user code."
 layers configuration. You are free to put any user code."
 
   (spacemacs/toggle-line-numbers) ;; enable line numbers
+  (add-hook 'alchemist-mode-hook 'company-mode)
 
   ;; Indentation from
   (defun tw/my-setup-indent (n)
@@ -255,12 +259,31 @@ layers configuration. You are free to put any user code."
 
     (defun tw/project-prompt ()
       (interactive)
-      (let ((current-work-dir "/Users/Tim/TIY/Cohorts/Cohort 5/Projects/"))
+      (let ((current-work-dir "/Users/Tim/TIY/Cohorts/Cohort-6/Projects"))
         (tw/open-project-by-name current-work-dir)))
   )
 
   (define-key evil-normal-state-map (kbd "C-p") 'tw/project-prompt)
+
+  ;; Hide `node_modules` from view
+  (setq projectile-git-command "git ls-files -co --exclude-standard | grep -Ev '\.(gif|jpe?g|png)$|(^|/)(node_modules)/' | tr '\n' '\0'")
+
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(projectile-globally-ignored-directories
+   (quote
+    (".idea" ".eunit" ".git" ".hg" ".fslckout" ".bzr" "_darcs" ".tox" ".svn" "node_modules" ".stack-work"))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))))

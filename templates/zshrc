@@ -9,16 +9,13 @@ fi
 
 # Aliases
 alias e='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-alias v='vim'
-alias c='clear'
 alias do_personal='ssh root@104.131.24.10'
 alias do_projects='ssh tim@159.203.91.123'
-alias iron='~/TIY/Cohorts/Cohort\ 5/'
+alias iron='~/TIY/Cohorts/Cohort-6'
 alias gogo='~/Go/src/github.com/twhitacre'
-
-# Custom Deploy Git Commands
-alias gstage="git push staging master"
-alias gprod="git push production master"
+alias term='itermocil'
+alias pyserver='python -m SimpleHTTPServer 8000'
+alias weather='curl -4 wttr.in/Atlanta'
 
 # Git Shortcuts
 alias gp="git push origin"
