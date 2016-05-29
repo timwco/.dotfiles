@@ -16,6 +16,7 @@ alias gogo='~/Go/src/github.com/twhitacre'
 alias term='itermocil'
 alias pyserver='python -m SimpleHTTPServer 8000'
 alias weather='curl -4 wttr.in/Atlanta'
+alias v='vim .'
 
 # Git Shortcuts
 alias gp="git push origin"
