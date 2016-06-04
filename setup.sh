@@ -23,10 +23,16 @@ cd $templates
 echo "\n3. Moving existing dotfiles from ~ to $olddir \n"
 for file in $files; do
     mv ~/.$file $olddir/
-    echo "Creating symlink for $file"
     ln -s $templates/$file ~/.$file
 done
 
+# move over VIM Snippets - using UltiSnips
+echo "\n4. Moving over Vim Snippets \n"
+rm -rf ~/.vim/snippets
+mkdir ~/.vim/snippets
+mkdir ~/.vim/snippets/UltiSnips
+cp -R $dir/vim-snippets/ ~/.vim/snippets/UltiSnips
+
 # Copy over Sublime Text 3 Settings
-echo "\n4. Copying Over Sublime Text 3 Info"
+echo "\n5. Copying Over Sublime Text 3 Info"
 ln -sf $extras/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings

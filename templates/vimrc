@@ -28,6 +28,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'mru.vim'
 
 """"
 """" Language Plugins
@@ -40,11 +42,6 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'tpope/vim-rails'
 Plugin 'mxw/vim-jsx'
 
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
 """"
 """" Plugin Specific Config
 """"
@@ -53,6 +50,12 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:vim_markdown_folding_disabled = 1
 
+" Add Plugins to Runtime / Inside that place a folder called UltiSnips
+set runtimepath+=~/.vim/snippets/
+
+" All of your Plugins must be added before the following line
+call vundle#end()
+filetype plugin indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Custom Commands
@@ -84,9 +87,12 @@ set autoread
 let mapleader = ","
 let g:mapleader = ","
 
-" Fast saving
+" Leader Based Commands (saving, toggling, files etc)
 nmap <leader>w :w!<cr>
+nmap <leader>q :wq<cr>
+nmap <leader>x :q<cr>
 nmap <leader>t :NERDTreeToggle<cr>
+nmap <leader>f :MRU<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -354,7 +360,7 @@ map <leader>s? z=
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Quickly open a buffer for scripbble
-map <leader>q :e ~/buffer<cr>
+map <leader>z :e ~/buffer<cr>
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
