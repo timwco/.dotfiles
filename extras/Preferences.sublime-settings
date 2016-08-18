@@ -1,8 +1,8 @@
 {
 	"caret_style": "phase",
-	"color_scheme": "Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme",
+	"color_scheme": "Packages/Panda Syntax Sublime/Panda/panda-syntax.tmTheme",
 	"findreplace_small": true,
-	"font_size": 14,
+	"font_size": 15,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":

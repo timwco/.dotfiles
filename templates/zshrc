@@ -8,15 +8,19 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Aliases
-alias e='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-alias do_personal='ssh root@104.131.24.10'
-alias do_projects='ssh tim@159.203.91.123'
-alias iron='~/TIY/Cohorts/Cohort-6'
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+alias iron='~/TIY'
 alias gogo='~/Go/src/github.com/twhitacre'
 alias term='itermocil'
 alias pyserver='python -m SimpleHTTPServer 8000'
 alias weather='curl -4 wttr.in/Atlanta'
 alias v='vim .'
+alias yolo='git push origin master && git push heroku master'
+alias ace='./ace'
+
+alias do_personal='ssh root@104.131.24.10'
+alias do_projects='ssh tim@159.203.91.123'
+alias do_produce='ssh tim@107.170.89.24'
 
 # Git Shortcuts
 alias gp="git push origin"
@@ -32,7 +36,7 @@ alias assign_issue="sh ~/Shell\ Scripts/tiy-assignment.sh"
 
 # The Rubies
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
+export path="$path:$home/.rvm/bin" # add rvm to path for scripting
 export PATH=/usr/local/sbin:${PATH}
 
 # Golang Settings
