@@ -1,4 +1,4 @@
-![dotfiles](https://dl.dropboxusercontent.com/1/view/fdwpeqtui7wa14t/Screenshots/bMYjo.png)
+![dotfiles](http://i.imgur.com/dgDEapll.png)
 
 These are my dot files. Enjoy.
 
