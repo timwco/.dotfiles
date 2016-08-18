@@ -36,7 +36,6 @@ alias assign_issue="sh ~/Shell\ Scripts/tiy-assignment.sh"
 
 # The Rubies
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export path="$path:$home/.rvm/bin" # add rvm to path for scripting
 export PATH=/usr/local/sbin:${PATH}
 
 # Golang Settings
@@ -44,3 +43,5 @@ export GOPATH=$HOME/Go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
+
+export path="$path:$home/.rvm/bin" # add rvm to path for scripting
