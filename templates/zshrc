@@ -10,9 +10,9 @@ fi
 # Aliases
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias iron='~/TIY'
-alias gogo='~/Go/src/github.com/twhitacre'
+alias gogo='~/Projects/Go/src/github.com/twhitacre'
 alias term='itermocil'
-alias pyserver='python -m SimpleHTTPServer 8000'
+alias pyserver='python -m SimpleHTTPServer 9000'
 alias weather='curl -4 wttr.in/Atlanta'
 alias v='vim .'
 alias yolo='git push origin master && git push heroku master'
@@ -31,17 +31,14 @@ alias gs="git status"
 # Waiting Dots
 COMPLETION_WAITING_DOTS="true"
 
-# GHI Commands
-alias assign_issue="sh ~/Shell\ Scripts/tiy-assignment.sh"
-
 # The Rubies
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH=/usr/local/sbin:${PATH}
 
 # Golang Settings
-export GOPATH=$HOME/Go
+export GOPATH=$HOME/Projects/Go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
-export path="$path:$home/.rvm/bin" # add rvm to path for scripting
+# export path="$path:$home/.rvm/bin" # add rvm to path for scripting

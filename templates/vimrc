@@ -41,6 +41,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'tpope/vim-rails'
 Plugin 'mxw/vim-jsx'
+Plugin 'elmcast/elm-vim'
 
 """"
 """" Plugin Specific Config
@@ -49,6 +50,7 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:vim_markdown_folding_disabled = 1
+let g:elm_format_autosave = 1
 
 " Add Plugins to Runtime / Inside that place a folder called UltiSnips
 set runtimepath+=~/.vim/snippets/
