@@ -1,8 +1,11 @@
 {
 	"caret_style": "phase",
-	"color_scheme": "Packages/Panda Syntax Sublime/Panda/panda-syntax.tmTheme",
+	"color_scheme": "Packages/Theme - Lanzhou/base16-ocean.dark.tmTheme",
 	"findreplace_small": true,
-	"font_size": 15,
+	"font_size": 14,
+	"gravity_highlight_color_blue": true,
+	"gravity_sidebar_header": true,
+	"gravity_tab_height_short": true,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
@@ -18,7 +21,7 @@
 	"tab_font_small": true,
 	"tab_size": 2,
 	"tabs_small": true,
-	"theme": "Gravity.sublime-theme",
+	"theme": "Lanzhou.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"word_wrap": true
 }
