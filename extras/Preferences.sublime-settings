@@ -1,4 +1,10 @@
 {
+	"added_words":
+	[
+		"modals",
+		"mixins",
+		"mixin"
+	],
 	"caret_style": "phase",
 	"color_scheme": "Packages/Theme - Lanzhou/base16-ocean.dark.tmTheme",
 	"findreplace_small": true,
