@@ -3,12 +3,14 @@
 	[
 		"modals",
 		"mixins",
-		"mixin"
+		"mixin",
+		"Versioning",
+		"Immersive"
 	],
 	"caret_style": "phase",
 	"color_scheme": "Packages/Theme - Lanzhou/base16-ocean.dark.tmTheme",
 	"findreplace_small": true,
-	"font_size": 14,
+	"font_size": 18,
 	"gravity_highlight_color_blue": true,
 	"gravity_sidebar_header": true,
 	"gravity_tab_height_short": true,

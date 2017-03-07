@@ -17,7 +17,7 @@ alias weather='curl -4 wttr.in/Atlanta'
 alias v='vim .'
 alias yolo='git push origin master && git push heroku master'
 alias ace='./ace'
-alias nlwatcher='~/TIY/newline-watcher/watcher.rb'
+alias nl ='newline_catalog'
 
 alias do_personal='ssh root@104.131.24.10'
 alias do_projects='ssh tim@159.203.91.123'
@@ -33,13 +33,11 @@ alias gs="git status"
 COMPLETION_WAITING_DOTS="true"
 
 # The Rubies
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export PATH=/usr/local/sbin:${PATH}
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # Golang Settings
 export GOPATH=$HOME/Developer/go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
-
-# export path="$path:$home/.rvm/bin" # add rvm to path for scripting
