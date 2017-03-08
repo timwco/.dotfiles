@@ -6,8 +6,6 @@
 	excludesfile = /Users/Tim/.gitignore_global
 [github]
   user = twhitacre
-[ghi]
-  token = !security find-internet-password -a twhitacre -s github.com -l 'ghi token' -w
 [color]
   ui = true
 [format]
