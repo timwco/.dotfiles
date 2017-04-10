@@ -11,7 +11,7 @@
 		"preprocess"
 	],
 	"caret_style": "phase",
-	"color_scheme": "Packages/Theme - Lanzhou/base16-ocean.dark.tmTheme",
+	"color_scheme": "Packages/Oceanic Next Color Scheme/Oceanic Next.tmTheme",
 	"findreplace_small": true,
 	"font_size": 18,
 	"gravity_highlight_color_blue": true,
@@ -32,7 +32,7 @@
 	"tab_font_small": true,
 	"tab_size": 2,
 	"tabs_small": true,
-	"theme": "Lanzhou.sublime-theme",
+	"theme": "Oceanic Next.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"word_wrap": true
 }
