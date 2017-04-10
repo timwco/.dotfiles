@@ -5,7 +5,10 @@
 		"mixins",
 		"mixin",
 		"Versioning",
-		"Immersive"
+		"Immersive",
+		"upskilling",
+		"upskill",
+		"preprocess"
 	],
 	"caret_style": "phase",
 	"color_scheme": "Packages/Theme - Lanzhou/base16-ocean.dark.tmTheme",
