@@ -17,6 +17,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'dracula/vim'
 
 """"
 """" Productivity Plugins
@@ -158,8 +159,10 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-colorscheme 1989
-set background=dark
+" colorscheme 1989
+" set background=dark
+colorscheme dracula
+highlight Normal ctermfg=NONE ctermbg=NONE
 
 " Set extra options when running in GUI mode
 if has("gui_running")
