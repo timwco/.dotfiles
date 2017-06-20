@@ -28,6 +28,7 @@ alias gp="git push origin"
 alias gc="git commit"
 alias ga="git add ."
 alias gs="git status"
+alias gclean='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d && git fetch -p'
 
 # Waiting Dots
 COMPLETION_WAITING_DOTS="true"
@@ -44,4 +45,5 @@ export PATH=$PATH:$GOROOT/bin
 
 # Iron Yard Specific Stuff
 alias iron='~/TIY'
+alias codex='~/TIY/Content/codex'
 alias nl='newline_catalog'
