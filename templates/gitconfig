@@ -2,7 +2,7 @@
 	email = tim@timw.co
 	name = Tim Whitacre
 [core]
-  editor = vim
+  editor = nvim
 	excludesfile = /Users/Tim/.gitignore_global
 [github]
   user = twhitacre

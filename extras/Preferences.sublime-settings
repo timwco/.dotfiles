@@ -13,7 +13,7 @@
 	"caret_style": "phase",
 	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
 	"findreplace_small": true,
-	"font_size": 19,
+	"font_size": 15,
 	"gravity_highlight_color_blue": true,
 	"gravity_sidebar_header": true,
 	"gravity_tab_height_short": true,
