@@ -34,5 +34,9 @@ mkdir ~/.vim/snippets/UltiSnips
 cp -R $dir/vim-snippets/ ~/.vim/snippets/UltiSnips
 
 # Copy over Sublime Text 3 Settings
-echo "\n5. Copying Over Sublime Text 3 Info"
+echo "\n5. Copying Over Sublime Text 3 Settings"
 ln -sf $extras/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+
+# Copy over VS Code Settings
+echo "\n5. Copying Over VS Code Settings" 
+ln -sf $extras/settings.json ~/Library/Application\ Support/Code/User/settings.json

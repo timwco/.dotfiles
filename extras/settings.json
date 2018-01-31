@@ -1,0 +1,17 @@
+{
+    "editor.fontSize": 20,
+    "editor.tabSize": 2,
+    "editor.lineHeight": 25,
+    "editor.letterSpacing": 0.5,
+    "editor.fontWeight": "400",
+    "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.renderWhitespace": "boundary",
+    "editor.wordWrap": "on",
+    "editor.parameterHints": false,
+    "editor.formatOnPaste": true,    
+    "workbench.colorTheme": "Panda Syntax",
+    "editor.dragAndDrop": false,
+    "editor.cursorBlinking": "solid",
+    "editor.codeLens": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+}

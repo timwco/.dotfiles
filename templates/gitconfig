@@ -1,6 +1,6 @@
 [user]
-	email = tim@timw.co
 	name = Tim Whitacre
+	email = tim.whitacre@digitalscientists.com
 [core]
   editor = nvim
 	excludesfile = /Users/Tim/.gitignore_global
