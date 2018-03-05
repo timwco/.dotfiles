@@ -11,9 +11,10 @@
 		"preprocess"
 	],
 	"caret_style": "phase",
-	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+	"color_scheme": "Packages/Panda Syntax Sublime/Panda/panda-syntax.tmTheme",
 	"findreplace_small": true,
-	"font_size": 15,
+	"font_face": "Operator Mono",
+	"font_size": 18,
 	"gravity_highlight_color_blue": true,
 	"gravity_sidebar_header": true,
 	"gravity_tab_height_short": true,

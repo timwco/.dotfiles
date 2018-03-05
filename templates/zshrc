@@ -24,7 +24,7 @@ alias gc="git commit"
 alias ga="git add ."
 alias gs="git status"
 alias gclean='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d && git fetch -p'
-alias yolo='git push origin master && git push heroku master'
+alias yolo='git push origin master && eb deploy'
 
 # Waiting Dots
 COMPLETION_WAITING_DOTS="true"
