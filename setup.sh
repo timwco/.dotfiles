@@ -33,4 +33,4 @@ ln -sf $dir/sublime/Preferences.sublime-settings ~/Library/Application\ Support/
 echo "\n5. Copying Over VS Code Settings" 
 ln -s $dir/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s $dir/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -s $dir/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
+ln -s $dir/vscode/snippets/* ~/Library/Application\ Support/Code/User/snippets
