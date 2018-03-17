@@ -14,7 +14,8 @@ alias proj='~/Projects'
 alias term='itermocil'
 alias pyserver='python -m SimpleHTTPServer 9000'
 alias weather='curl -4 wttr.in/Atlanta'
-alias v='vim .'
+alias v='nvim .'
+alias vim='nvim'
 alias yolo='git push origin master && git push heroku master'
 alias ace='./ace'
 alias dot='~/.dotfiles'
@@ -46,4 +47,10 @@ export PATH=$PATH:$GOROOT/bin
 # Iron Yard Specific Stuff
 alias iron='~/TIY'
 alias codex='~/TIY/Content/codex'
+alias courses='~/TIY/Content/codex-courses'
 alias nl='newline_catalog'
+alias publish='git push codex master'
+alias preview='newline_catalog watch'
+export ELO_EDITOR='subl'
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
