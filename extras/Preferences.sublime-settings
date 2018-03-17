@@ -10,8 +10,10 @@
 		"upskill",
 		"preprocess"
 	],
+	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Panda Syntax Sublime/Panda/panda-syntax.tmTheme",
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Tomorrow.tmTheme",
+	"fade_fold_buttons": false,
 	"findreplace_small": true,
 	"font_face": "Operator Mono",
 	"font_size": 18,
@@ -22,6 +24,7 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Vintage"
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
@@ -33,6 +36,8 @@
 	"tab_font_small": true,
 	"tab_size": 2,
 	"tabs_small": true,
+	"theme": "Boxy Tomorrow.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"wide_caret": true,
 	"word_wrap": true
 }

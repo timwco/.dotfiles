@@ -26,8 +26,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mru.vim'
@@ -47,14 +45,8 @@ Plugin 'elmcast/elm-vim'
 """"
 """" Plugin Specific Config
 """"
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:vim_markdown_folding_disabled = 1
 let g:elm_format_autosave = 1
-
-" Add Plugins to Runtime / Inside that place a folder called UltiSnips
-set runtimepath+=~/.vim/snippets/
 
 " All of your Plugins must be added before the following line
 call vundle#end()

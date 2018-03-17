@@ -7,7 +7,7 @@
     "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
     "editor.wordWrap": "on",
     "editor.parameterHints": false,
-    "workbench.colorTheme": "Panda Syntax",
+    "workbench.colorTheme": "One Dark Pro",
     "editor.dragAndDrop": false,
     "editor.cursorBlinking": "solid",
     "editor.codeLens": false,
@@ -15,5 +15,4 @@
     "window.zoomLevel": 0,
     "terminal.integrated.fontSize": 15,
     "editor.formatOnSave": true,
-    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
 }
