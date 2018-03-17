@@ -6,8 +6,7 @@
 
 #  Variables
 dir=~/.dotfiles
-templates=$dir/templates
-extras=$dir/extras
+configs=$dir/configs
 olddir=~/.dotfiles_old
 files="gitconfig zshrc spacemacs zpreztorc gitignore_global npmrc vimrc"
 
@@ -16,27 +15,22 @@ echo "\n1. Creating $olddir for backup of any existing dotfiles in ~"
 mkdir -p $olddir
 
 # change to the dotfiles directory
-echo "\n2. Changing to the $templates directory"
-cd $templates
+echo "\n2. Changing to the $configs directory"
+cd $configs
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 echo "\n3. Moving existing dotfiles from ~ to $olddir \n"
 for file in $files; do
     mv ~/.$file $olddir/
-    ln -s $templates/$file ~/.$file
+    ln -s $configs/$file ~/.$file
 done
-
-# move over VIM Snippets - using UltiSnips
-echo "\n4. Moving over Vim Snippets \n"
-rm -rf ~/.vim/snippets
-mkdir ~/.vim/snippets
-mkdir ~/.vim/snippets/UltiSnips
-cp -R $dir/vim-snippets/ ~/.vim/snippets/UltiSnips
 
 # Copy over Sublime Text 3 Settings
 echo "\n5. Copying Over Sublime Text 3 Settings"
-ln -sf $extras/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+ln -sf $dir/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 
 # Copy over VS Code Settings
 echo "\n5. Copying Over VS Code Settings" 
-ln -sf $extras/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s $dir/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s $dir/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s $dir/vscode/snippets/ ~/Library/Application\ Support/Code/User/snippets
