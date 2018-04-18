@@ -10,3 +10,8 @@
   ui = true
 [format]
   pretty = %C(magenta)%h%Creset %s %C(cyan)(%an, %cr)%Creset
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

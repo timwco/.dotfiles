@@ -14,5 +14,13 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "window.zoomLevel": 0,
     "terminal.integrated.fontSize": 15,
-    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.rb"
+    ],
+    "emmet.includeLanguages": {"erb": "html"}
 }
