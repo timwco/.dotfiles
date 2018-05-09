@@ -7,20 +7,23 @@
     "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
     "editor.wordWrap": "on",
     "editor.parameterHints": false,
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Cobalt2",
     "editor.dragAndDrop": false,
     "editor.cursorBlinking": "solid",
     "editor.codeLens": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "window.zoomLevel": 0,
     "terminal.integrated.fontSize": 15,
+    "terminal.integrated.shellArgs.osx": [],
+    "terminal.integrated.fontFamily": "'SauceCodePro Nerd Font'",
     "[javascript]": {
-        "editor.formatOnSave": true
+        // "editor.formatOnSave": true
     },
     "todohighlight.include": [
         "**/*.js",
         "**/*.jsx",
         "**/*.rb"
     ],
-    "emmet.includeLanguages": {"erb": "html"}
+    "emmet.includeLanguages": {"erb": "html"},
+    "workbench.editor.enablePreviewFromQuickOpen": false
 }
