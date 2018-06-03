@@ -1,3 +1,4 @@
+// Place your settings in this file to overwrite the default settings
 {
     "editor.fontSize": 18,
     "editor.tabSize": 2,
@@ -7,12 +8,25 @@
     "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
     "editor.wordWrap": "on",
     "editor.parameterHints": false,
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Ayu Mirage",
     "editor.dragAndDrop": false,
-    "editor.cursorBlinking": "solid",
     "editor.codeLens": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "window.zoomLevel": 0,
     "terminal.integrated.fontSize": 15,
-    "editor.formatOnSave": true,
+    "terminal.integrated.shellArgs.osx": [],
+    "terminal.integrated.fontFamily": "'SauceCodePro Nerd Font'",
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.rb"
+    ],
+    "emmet.includeLanguages": {
+        "html.erb": "html",
+        "erb": "html"
+    },
+    "workbench.editor.enablePreviewFromQuickOpen": false
 }
