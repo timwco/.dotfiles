@@ -44,14 +44,8 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
-# Iron Yard Specific Stuff
-alias iron='~/TIY'
-alias codex='~/TIY/Content/codex'
-alias courses='~/TIY/Content/codex-courses'
-alias nl='newline_catalog'
-alias publish='git push codex master'
-alias preview='newline_catalog watch'
-export ELO_EDITOR='subl'
+# New Story Specfics
+alias ns='~/NewStory/code'
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -89,3 +83,9 @@ POWERLEVEL9K_NODE_VERSION_BACKGROUND="yellow"
 POWERLEVEL9K_NODE_VERSION_FOREGROUND="black"
 POWERLEVEL9K_AWS_EB_ENV_BACKGROUND="clear"
 POWERLEVEL9K_AWS_EB_ENV_FOREGROUND=050
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/Tim/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/Tim/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/Tim/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/Tim/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh

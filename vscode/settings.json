@@ -8,7 +8,7 @@
     "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
     "editor.wordWrap": "on",
     "editor.parameterHints": false,
-    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.colorTheme": "Snazzy Operator",
     "editor.dragAndDrop": false,
     "editor.codeLens": false,
     "editor.multiCursorModifier": "ctrlCmd",
@@ -17,7 +17,7 @@
     "terminal.integrated.shellArgs.osx": [],
     "terminal.integrated.fontFamily": "'SauceCodePro Nerd Font'",
     "[javascript]": {
-        "editor.formatOnSave": true
+        "editor.formatOnSave": false
     },
     "todohighlight.include": [
         "**/*.js",
