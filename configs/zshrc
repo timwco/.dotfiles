@@ -1,11 +1,44 @@
-#
-# Executes commands at the start of an interactive session.
-#
+# Terminal Setup
+
+# Powerlevel9k Styles
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_RBENV_ALWAYS='true'
+POWERLEVEL9K_DIR_PATH_SEPARATOR="%F{white}\/%F{050}"
+POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=''
+POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=''
+POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR=''
+POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR=''
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir dir_writable)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs rvm)
+POWERLEVEL9K_DIR_HOME_BACKGROUND="clear"
+POWERLEVEL9K_DIR_HOME_FOREGROUND=050
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="clear"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND=050
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="clear"
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND="clear"
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND="green"
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND="clear"
+POWERLEVEL9K_VCS_MODIFIED_FOREGROUND="yellow"
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND="clear"
+POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND="red"
+POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND="clear"
+POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="red"
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+POWERLEVEL9K_SHORTEN_DELIMITER=""
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='clear'
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='magenta'
+POWERLEVEL9K_RBENV_BACKGROUND="red"
+POWERLEVEL9K_RBENV_FOREGROUND="white"
+POWERLEVEL9K_NODE_VERSION_BACKGROUND="yellow"
+POWERLEVEL9K_NODE_VERSION_FOREGROUND="black"
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+
 
 # Aliases
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
@@ -19,6 +52,8 @@ alias vim='nvim'
 alias yolo='git push origin master && git push heroku master'
 alias ace='./ace'
 alias dot='~/.dotfiles'
+alias rnd='open "rndebugger://set-debugger-loc?host=localhost&port=19001"'
+alias nukenm='find . -name "node_modules" -type d -prune -exec rm -rf "{}" +'
 
 alias do_personal='ssh root@104.131.24.10'
 alias do_projects='ssh tim@159.203.91.123'
@@ -47,45 +82,7 @@ export PATH=$PATH:$GOROOT/bin
 # New Story Specfics
 alias ns='~/NewStory/code'
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# Yarn Config Path (original/old commentd out)
+#export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$PATH:$(yarn global bin)"
 
-# Powerlevel9k Styles
-POWERLEVEL9K_MODE='nerdfont-complete'
-POWERLEVEL9K_DIR_PATH_SEPARATOR="%F{white}\/%F{050}"
-POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=''
-POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=''
-POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR=''
-POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR=''
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir dir_writable)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vcs rvm)
-POWERLEVEL9K_DIR_HOME_BACKGROUND="clear"
-POWERLEVEL9K_DIR_HOME_FOREGROUND=050
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="clear"
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND=050
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="clear"
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
-POWERLEVEL9K_VCS_CLEAN_BACKGROUND="clear"
-POWERLEVEL9K_VCS_CLEAN_FOREGROUND="green"
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND="clear"
-POWERLEVEL9K_VCS_MODIFIED_FOREGROUND="yellow"
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND="clear"
-POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND="red"
-POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_BACKGROUND="clear"
-POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="red"
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
-POWERLEVEL9K_SHORTEN_DELIMITER=""
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='clear'
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='magenta'
-POWERLEVEL9K_RVM_BACKGROUND="red"
-POWERLEVEL9K_RVM_FOREGROUND="white"
-POWERLEVEL9K_NODE_VERSION_BACKGROUND="yellow"
-POWERLEVEL9K_NODE_VERSION_FOREGROUND="black"
-POWERLEVEL9K_AWS_EB_ENV_BACKGROUND="clear"
-POWERLEVEL9K_AWS_EB_ENV_FOREGROUND=050
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/Tim/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/Tim/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/Tim/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/Tim/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh

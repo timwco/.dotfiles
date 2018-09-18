@@ -8,7 +8,7 @@
     "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
     "editor.wordWrap": "on",
     "editor.parameterHints": false,
-    "workbench.colorTheme": "Snazzy Operator",
+    "workbench.colorTheme": "Cobalt2",
     "editor.dragAndDrop": false,
     "editor.codeLens": false,
     "editor.multiCursorModifier": "ctrlCmd",
@@ -16,9 +16,6 @@
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.shellArgs.osx": [],
     "terminal.integrated.fontFamily": "'SauceCodePro Nerd Font'",
-    "[javascript]": {
-        "editor.formatOnSave": false
-    },
     "todohighlight.include": [
         "**/*.js",
         "**/*.jsx",
@@ -28,5 +25,13 @@
         "html.erb": "html",
         "erb": "html"
     },
-    "workbench.editor.enablePreviewFromQuickOpen": false
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    // These are all my auto-save configs
+    "editor.formatOnSave": true,
+    // turn it off for JS
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
 }
