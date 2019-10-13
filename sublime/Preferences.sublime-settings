@@ -8,7 +8,13 @@
 		"Immersive",
 		"upskilling",
 		"upskill",
-		"preprocess"
+		"preprocess",
+		"app",
+		"Apps",
+		"Offline",
+		"checkin",
+		"checkins",
+		"Lateralus"
 	],
 	"bold_folder_labels": true,
 	"caret_style": "phase",
@@ -16,7 +22,7 @@
 	"fade_fold_buttons": false,
 	"findreplace_small": true,
 	"font_face": "Operator Mono",
-	"font_size": 18,
+	"font_size": 16,
 	"gravity_highlight_color_blue": true,
 	"gravity_sidebar_header": true,
 	"gravity_tab_height_short": true,
@@ -24,7 +30,6 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Vintage"
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,

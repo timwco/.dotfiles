@@ -5,17 +5,17 @@
     "editor.lineHeight": 25,
     "editor.letterSpacing": 0.5,
     "editor.fontWeight": "400",
-    "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Dank Mono', 'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
     "editor.wordWrap": "on",
     "editor.parameterHints": false,
-    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "SynthWave '84",
     "editor.dragAndDrop": false,
     "editor.codeLens": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "window.zoomLevel": 0,
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.shellArgs.osx": [],
-    "terminal.integrated.fontFamily": "'SauceCodePro Nerd Font'",
+    "terminal.integrated.fontFamily": "'Dank Mono'",
     "todohighlight.include": [
         "**/*.js",
         "**/*.jsx",
@@ -63,6 +63,22 @@
     ],
     "explorer.confirmDragAndDrop": false,
     "cSpell.userWords": [
+        "paren",
         "twilio"
     ],
+    "explorer.confirmDelete": false,
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "extensions.ignoreRecommendations": false,
+    "breadcrumbs.enabled": false,
+    "editor.fontLigatures": true,
 }
