@@ -15,7 +15,7 @@
     "window.zoomLevel": 0,
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.shellArgs.osx": [],
-    "terminal.integrated.fontFamily": "'Dank Mono'",
+    "terminal.integrated.fontFamily": "Dank Mono",
     "todohighlight.include": [
         "**/*.js",
         "**/*.jsx",
@@ -81,4 +81,7 @@
     "extensions.ignoreRecommendations": false,
     "breadcrumbs.enabled": false,
     "editor.fontLigatures": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
 }

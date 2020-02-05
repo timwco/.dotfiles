@@ -1,5 +1,5 @@
 {
-/*
+  /*
   // Place your snippets for JavaScript here. Each snippet is defined under a snippet name and has a prefix, body and 
   // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
   // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
@@ -28,6 +28,19 @@
     ],
     "description": "Inserts a long dash seperator to make debugging easier"
   },
+  "React JS Loadable": {
+    "prefix": "rload",
+    "body": [
+      "/**",
+      "* Asynchronously loads the component for $1",
+      "*/",
+      "\t",
+      "import loadable from 'utils/loadable';",
+      "\t",
+      "export default loadable(() => import('./index'));"
+    ],
+    "description": "Inserts the loadable extension"
+  },
   "React Native Screen Template": {
     "prefix": "rnscreen",
     "body": [
@@ -51,7 +64,7 @@
       "  }",
       "\t",
       "  componentDidMount() {",
-      "\t",  
+      "\t",
       "  }",
       "\t",
       "  render() {",
