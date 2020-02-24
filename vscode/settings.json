@@ -6,16 +6,16 @@
     "editor.letterSpacing": 0.5,
     "editor.fontWeight": "400",
     "editor.fontFamily": "'Dank Mono', 'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
     "editor.wordWrap": "on",
     "editor.parameterHints": false,
-    "workbench.colorTheme": "SynthWave '84",
     "editor.dragAndDrop": false,
     "editor.codeLens": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "window.zoomLevel": 0,
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.shellArgs.osx": [],
-    "terminal.integrated.fontFamily": "Dank Mono",
+    "terminal.integrated.fontFamily": "'Dank Mono'",
     "todohighlight.include": [
         "**/*.js",
         "**/*.jsx",
@@ -67,11 +67,7 @@
         "twilio"
     ],
     "explorer.confirmDelete": false,
-    "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
@@ -80,8 +76,8 @@
     },
     "extensions.ignoreRecommendations": false,
     "breadcrumbs.enabled": false,
-    "editor.fontLigatures": true,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
+    "workbench.colorTheme": "SynthWave '84",
 }

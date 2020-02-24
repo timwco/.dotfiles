@@ -24,7 +24,10 @@ alias gcloud='~/Scripts/google-cloud-sdk/bin/gcloud'
 alias gsutil='~/Scripts/google-cloud-sdk/bin/gsutil'
 
 # Unalias
-unalias lt # Did this to remove it so I could use localtunnel
+unalias lt
+
+# Project Specific
+alias quseserver='lt --port 3000 --subdomain quse'
 
 # Git Shortcuts
 alias gp="git push origin"
@@ -75,8 +78,8 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
 # New Story Specfics
-alias ns='~/NewStory/code/hit'
-alias nsmobile='cd ~/NewStory/code/hit/mobile-impact && yarn xcode && code . && yarn start'
+alias ns='~/NewStory/code/felix'
+alias nsmobile='cd ~/NewStory/code/felix/mobile && yarn xcode && code . && yarn start'
 alias grade='sh ~/NewStory/hiring/grade.sh'
 
 # Yarn Config Path (original/old commentd out)
