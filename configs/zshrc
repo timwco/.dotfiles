@@ -23,15 +23,10 @@ alias flane='bundle exec fastlane'
 alias gcloud='~/Scripts/google-cloud-sdk/bin/gcloud'
 alias gsutil='~/Scripts/google-cloud-sdk/bin/gsutil'
 
-# Unalias
-unalias lt
-
-# Project Specific
-alias quseserver='lt --port 3000 --subdomain quse'
-
 # Git Shortcuts
 alias gp="git push origin"
 alias gc="git commit"
+alias gcc="git commit -n"
 alias ga="git add ."
 alias gs="git status"
 alias gclean='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d && git fetch -p'
