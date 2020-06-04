@@ -80,4 +80,6 @@
         "source.fixAll.eslint": true
     },
     "workbench.colorTheme": "SynthWave '84",
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
 }

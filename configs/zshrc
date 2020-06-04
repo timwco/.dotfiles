@@ -29,7 +29,8 @@ alias gc="git commit"
 alias gcc="git commit -n"
 alias ga="git add ."
 alias gs="git status"
-alias gclean='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d && git fetch -p'
+alias gclean='git branch --merged| egrep -v "(^\*|master|developmenti|dev)" | xargs git branch -d'
+alias glines='git ls-files | xargs wc -l'
 
 # Waiting Dots
 COMPLETION_WAITING_DOTS="true"
@@ -67,10 +68,11 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 # Golang Settings
-export GOPATH=$HOME/Developer/go
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+test -d "${GOPATH}" || mkdir "${GOPATH}"
+test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
 # New Story Specfics
 alias ns='~/NewStory/code/felix'
