@@ -10,6 +10,7 @@ alias gogo='~/Developer/go/src/github.com/twhitacre'
 alias proj='~/Projects'
 alias term='itermocil'
 alias pyserver='python -m SimpleHTTPServer 9000'
+alias pyserver2='python -m SimpleHTTPServer 9001'
 alias weather='curl -4 wttr.in/Atlanta'
 alias v='nvim .'
 alias vim='nvim'
@@ -22,6 +23,7 @@ alias ngrok='~/Scripts/ngrok'
 alias flane='bundle exec fastlane'
 alias gcloud='~/Scripts/google-cloud-sdk/bin/gcloud'
 alias gsutil='~/Scripts/google-cloud-sdk/bin/gsutil'
+alias doom="~/.emacs.d/bin/doom"
 
 # Git Shortcuts
 alias gp="git push origin"
@@ -29,7 +31,7 @@ alias gc="git commit"
 alias gcc="git commit -n"
 alias ga="git add ."
 alias gs="git status"
-alias gclean='git branch --merged| egrep -v "(^\*|master|developmenti|dev)" | xargs git branch -d'
+alias gclean='git remote prune origin && git branch --merged| egrep -v "(^\*|master|development|dev)" | xargs git branch -d'
 alias glines='git ls-files | xargs wc -l'
 
 # Waiting Dots
@@ -40,32 +42,21 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 alias railsedit='EDITOR=nvim rails credentials:edit'
 
-# The Nodes
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Auto Switching for Node via `nvm use` 
+# Auto Switching for Node via `n` 
 autoload -U add-zsh-hook
-load-nvmrc() {
-  local node_version="$(nvm version)"
-  local nvmrc_path="$(nvm_find_nvmrc)"
-
-  if [ -n "$nvmrc_path" ]; then
-    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
-
-    if [ "$nvmrc_node_version" = "N/A" ]; then
-      nvm install
-    elif [ "$nvmrc_node_version" != "$node_version" ]; then
-      nvm use
-    fi
-  elif [ "$node_version" != "$(nvm version default)" ]; then
-    echo "Reverting to nvm default version"
-    nvm use default
-  fi
+check-node-version() {
+  if    [ -e ".nvmrc" ] \
+     || [ -e ".node-version" ] \
+     || [ -e ".n-node-version" ]; then
+      echo "Checking Node Version..."
+      n auto
+  fi;
 }
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
+add-zsh-hook chpwd check-node-version
+check-node-version
+
+# Doom/Emacs Settings
+export PATH="/Applications/MacPorts/Emacs.app/Contents/MacOS:$PATH"
 
 # Golang Settings
 export GOPATH="${HOME}/.go"
@@ -75,7 +66,7 @@ test -d "${GOPATH}" || mkdir "${GOPATH}"
 test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
 # New Story Specfics
-alias ns='~/NewStory/code/felix'
+alias ns='~/NewStory/code'
 alias nsmobile='cd ~/NewStory/code/felix/mobile && yarn xcode && code . && yarn start'
 alias grade='sh ~/NewStory/hiring/grade.sh'
 
@@ -98,13 +89,6 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export PATH="$HOME/.fastlane/bin:$PATH"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/Tim/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/Tim/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/Tim/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/Tim/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 

@@ -79,7 +79,23 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "workbench.colorTheme": "SynthWave '84",
+    "workbench.colorTheme": "Shades of Purple",
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
+    "java.semanticHighlighting.enabled": true,
+    "yaml.schemas": {
+        "file:///Users/tim/.vscode/extensions/atlassian.atlascode-2.9.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.bitbucket.enabled": false,
+    "atlascode.jira.jqlList": [
+        {
+            "id": "fcea1325-adde-436e-9d74-203beea0f55d",
+            "enabled": true,
+            "name": "My newstorycharity Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "13e4ea99-b540-411e-8cda-0ba80d58d5b1",
+            "monitor": true
+        }
+    ],
+    "java.project.importHint": false,
 }

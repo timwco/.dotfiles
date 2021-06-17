@@ -2,3 +2,4 @@ save=true
 save-exact=true
 loglevel=error
 //registry.npmjs.org/:_authToken=dc1564d4-a3ff-4c24-b419-15a769ac892d
+save-prefix=
