@@ -41,6 +41,7 @@ COMPLETION_WAITING_DOTS="true"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 alias railsedit='EDITOR=nvim rails credentials:edit'
+alias railswp='./bin/webpack-dev-server'
 
 # Auto Switching for Node via `n` 
 autoload -U add-zsh-hook
@@ -68,6 +69,7 @@ test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 # New Story Specfics
 alias ns='~/NewStory/code'
 alias nsmobile='cd ~/NewStory/code/felix/mobile && yarn xcode && code . && yarn start'
+alias nswebsite='cd ~/Local\ Sites/new-story/app/public/'
 alias grade='sh ~/NewStory/hiring/grade.sh'
 
 # Yarn Config Path (original/old commentd out)
