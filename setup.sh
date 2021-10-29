@@ -27,10 +27,4 @@ done
 
 # Copy over Sublime Text 3 Settings
 echo "\n5. Copying Over Sublime Text 3 Settings"
-ln -sf $dir/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-
-# Copy over VS Code Settings
-echo "\n5. Copying Over VS Code Settings" 
-ln -s $dir/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -s $dir/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-ln -s $dir/vscode/snippets/* ~/Library/Application\ Support/Code/User/snippets
+ln -sf $dir/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text/Packages/User/Preferences.sublime-settings
