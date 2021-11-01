@@ -11,12 +11,12 @@ These are my dot files. Enjoy.
    - View Latest Version [here](http://www.ruby-lang.org/en/)
    - Install Latest :: `rbenv install <LATEST>`
    - Set Latest :: `rbenv global <LATEST>`
-4. Install n :: `brew install n` [Directions](https://github.com/tj/n#third-party-installers)
+5. Install Node (NPM) :: `brew install node`
+6. Install n :: [Directions](https://github.com/tj/n#installation)
    - Install Latest Version :: `n latest`
 5. Install Yarn :: `brew install yarn`
-6. Install Neovim :: `brew install neovim`
-7. Install Fonts
-   - _Only if a theme file below requires a specific font_
+6. Install Neovim :: `brew install neovim` (Vim terminal alternative)
+7. Install Fonts (Currently, [Dank Mono](https://philpl.gumroad.com/l/dank-mono)
 8. Install ZPrezto :: [Directions](https://github.com/sorin-ionescu/prezto)
 
 ## Restore
